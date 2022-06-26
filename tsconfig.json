@@ -1,0 +1,38 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist",
+    "rootDir": "./src",
+    // target settings for node js
+    "module": "esnext",
+    "target": "esnext",
+    "lib": [
+      "ES2021"
+    ],
+    // for CommonJS module imports
+    "allowSyntheticDefaultImports": true,
+    // other best practice configs
+    "moduleResolution": "nodenext",
+    "strict": true,
+    "noImplicitAny": false,
+    // <-- get rid of this!
+    "removeComments": false,
+    // <-- do not remove comments (needed for @deprecated notices etc)
+    "emitDecoratorMetadata": true,
+    "composite": true,
+    "experimentalDecorators": true,
+    "strictPropertyInitialization": false,
+    "resolveJsonModule": true,
+    "sourceMap": true,
+    "isolatedModules": false,
+    "declaration": true,
+    "esModuleInterop": true,
+    "types": ["node"],
+  },
+  "exclude": [
+    "node_modules",
+    "**/__tests__"
+  ],
+  "include": [
+    "./src"
+  ]
+}
